@@ -1,36 +1,32 @@
 <script>
 	import Title from '$lib/Components/Title.svelte';
+	import Title_wild from '$lib/Components/Title_wild.svelte';
+	import HighlightText from '$lib/Components/HighlightText.svelte';
 	import { _ } from 'svelte-i18n';
 </script>
 
-<div class="relative flex min-h-[80svh] overflow-hidden text-white md:ml-10 lg:min-h-[100svh]">
-	<div class="z-50 grid md:grid-cols-3">
-		<div class="p-8">
-			<Title head={$_('menu.future')} title="Cyber Subin" color="text-red" />
-		</div>
-		<div class="md:hidden lg:block" />
-		<div class="space-y-8 p-8 md:col-span-2 lg:col-span-1">
-			<p class="xl:w-11/12">
-				{$_('future.hero1.p1')}
+<div class="relative flex min-h-[80svh] flex-col gap-8 bg-black px-6 py-12 text-white md:px-10 md:py-16 lg:min-h-[100svh] lg:justify-center">
+	<div class="grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]">
+		<!-- Left Column -->
+		<div class="pl-8 flex flex-col">
+			<Title_wild head={$_('menu.future')} title="Learning Dance Movements through No. 60 and AI" color="text-red" />
+			<div class="flex-auto"></div>
+			<p class="text-sm leading-relaxed">
+				<HighlightText text={$_('future.hero1.p1')} highlightColor="#C5A46D" />
 			</p>
-			<p class="xl:w-11/12">
-				{$_('future.hero1.p2')}
+		</div>
+	
+
+		<!-- Right Column -->
+		<div class="pl-8 space-y-6">
+			<p class="text-sm leading-relaxed">
+				<HighlightText text={$_('future.hero1.p2')} highlightColor="#C5A46D" />
+			</p>
+			<p class="text-sm leading-relaxed">
+				<HighlightText text={$_('future.hero1.p3')} highlightColor="#C5A46D" />
 			</p>
 			<!-- <a href="https://opencyberdance.pages.dev" class="btn inline-block">Let's Experiment</a> -->
 		</div>
-	</div>
-	<div class="bg-red-500 absolute bottom-0 left-0 z-50 w-full p-6 text-4xl text-white">
-		<div class="relative w-full">
-			<div
-				class="absolute left-0 top-[100%] hidden -rotate-90 md:block"
-				style="transform-origin: top left"
-			>
-				Human-AI<br />Co-Dancing
-			</div>
-		</div>
-	</div>
-	<div class="absolute left-0 top-0 z-0 h-[110svh] w-full overflow-hidden">
-		<img src="/cybersubin.png" class="min-h-full object-cover opacity-50 lg:opacity-100" alt="" />
 	</div>
 </div>
 
@@ -61,7 +57,7 @@
 			<div></div>
 			<div class="w-full space-y-6 text-balance lg:w-11/12">
 				<p>
-					{$_('future.hero2.p1')}
+					<HighlightText text={$_('future.hero2.p1')} highlightColor="#C5A46D" />
 				</p>
 			</div>
 		</div>

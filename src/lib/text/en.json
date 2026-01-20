@@ -3,7 +3,8 @@
 	"hero": {
 		"cyber": "cyber",
 		"subin": "subin",
-		"description": "Evolving Cultural Heritage through Technology"
+		"description_line1": "Decoding Dance:",
+		"description_line2": "Transforming Physical Movement into Data"
 	},
 	"menu": {
 		"past": "Past",
@@ -15,10 +16,7 @@
 		"tagline": "year journey of Thai choreography from cultural root to integration with computer",
 		"p1": "Traditional dance forms serve as living cultural heritage, with choreographic knowledge transmitted through embodied practices. While digitization has enabled preservation, the deeper layers of tacit knowledge and improvisation remain frozen. This research introduces an approach to computationally formalize traditional dance knowledge as an interactive model, combining human dancers with virtual partners powered by computational systems derived from dance principles.",
 		"p2": "A multidisciplinary team developed a Human-AI system based on the \"No. 60\" principles established by Thai choreographer Pichet Klunchun, creating computational procedures to replicate the effects of the principles. This paradigm allows practitioners to interact with computational manifestations of ancestral choreographic knowledge, acknowledging non-Western knowledge systems often overlooked in colonial understandings of AI.",
-		"button": "Learn More",
-		"past": "1924",
-		"present": "2017",
-		"future": "2024"
+		"button": "Learn More"
 	},
 	"past": {
 		"title": "Mae Bot Yai",
@@ -64,8 +62,9 @@
 	},
 	"future": {
 		"hero1": {
-			"p1": "While the digitization approach can preserve the visual form of dance, the deeper knowledge and improvisational techniques remain frozen in time rather than flourishing as living practices.",
-			"p2": "In 2024, a multidisciplinary team analyzed and translated the principles of Mae Bot Yai and No. 60 into an interactive computational model that extends beyond a mere static recording of a dance performance. They developed an interactive system that allows the dancer, choreographer, and even the audience to participate in altering the choreography of the virtual agents by adjusting parameters that represent traditional Thai dance elements."
+			"p1": "*We invite you to learn together with teachers, artists, and a new generation of secondary school students.*",
+			"p2": "As the world moves toward the age of data, virtual environments, and AI, how can we use these tools to both *preserve* and *reimagine* Thai classical dance?",
+			"p3": "*No.60* is a learning system designed to explain foundational master dance movements through a clear, structured framework, open space for teachers and students to experiment and create new movements from traditional foundations,  and use AI as a *teaching assistant* for exploration, practice, reflection, and creative development."
 		},
 		"hero2": {
 			"p1": "The project was debuted at the National Theatre in Taiwan in March 2024. As the human dancer physically challenges, resists, follows, and improvises with the virtual dance partner's computational interpretations of traditional dance vocabularies, intriguing frictions arise that highlight each intelligence's distinct perspectives and capabilities. This dynamism suggests rich questions around autonomy, influence, control, and co-dependence as humans and virtual agents entangle through points of resonance and dissonance. Such interplay prompts vital discourses on the essence of the human spirit and freedom when choreographically coupled with non-human outputs operating in the same social and cultural space."

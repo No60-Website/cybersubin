@@ -84,7 +84,7 @@
 
 	<div id="present">
 		<Present />
-		<Present2 />
+		<!-- <Present2 /> -->
 	</div>
 
 	<div id="future">

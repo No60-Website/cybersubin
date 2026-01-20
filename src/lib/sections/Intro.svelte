@@ -12,11 +12,11 @@
 					<div class="aspect-video opacity-90">
 						<img src={`/intro/${text}.png`} class="h-full w-full object-cover" alt="" />
 					</div>
-					<div class="absolute bottom-0 mb-3 w-full text-center font-bold md:mb-1">
+					<!-- <div class="absolute bottom-0 mb-3 w-full text-center font-bold md:mb-1">
 						{$_(`menu.${text}`)} <span class="md:hidden">· {$_(`intro.${text}`)}</span>
-					</div>
+					</div> -->
 				</div>
-				<div class="hidden md:block">{$_(`intro.${text}`)}</div>
+				<!-- <div class="hidden md:block">{$_(`intro.${text}`)}</div> -->
 			</div>
 		{/each}
 	</div>
