@@ -17,10 +17,10 @@
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
 		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
-			<a href="#past" class="hover:cursor-pointer hover:bg-gold">{$_('menu.past')}</a>
-			<a href="#present" class="hover:cursor-pointer hover:bg-orange">{$_('menu.present')}</a>
-			<a href="#future" class="hover:cursor-pointer hover:bg-red">{$_('menu.future')}</a>
-			<a href="#about" class="hover:cursor-pointer hover:bg-neutral-800">{$_('menu.about')}</a>
+			<a href="#past" class="hover:cursor-pointer hover:bg-[#C5A46D]">{$_('menu.past')}</a>
+			<a href="#present" class="hover:cursor-pointer hover:bg-[#CA6C37]">{$_('menu.present')}</a>
+			<a href="#future" class="hover:cursor-pointer hover:bg-[#7B0F12]">{$_('menu.future')}</a>
+			<a href="#about" class="hover:cursor-pointer hover:bg-[#262626]">{$_('menu.about')}</a>
 		</div>
 	</nav>
 	<div class="flex h-full flex-col justify-between gap-6 p-6 md:items-center md:justify-center">
@@ -29,7 +29,7 @@
 				<h1>No.60</h1>
 			</div>
 		</div>
-		<h5 class="max-w-[12rem] text-base md:max-w-lg md:text-center md:text-xl text-[#C5A46D]">
+		<h5 class="max-w-[12rem] text-base text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
 			{$_('hero.description_line1')} <br />
 			{$_('hero.description_line2')}
 		</h5>

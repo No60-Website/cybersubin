@@ -99,16 +99,16 @@
 		class="sticky bottom-0 z-50 w-full border-t border-y-white bg-black text-center font-bold text-white md:hidden"
 	>
 		<ul class="divide-x-white grid w-full grid-cols-4 divide-x [&>li]:p-2">
-			<li class={`hover:cursor-pointer  ${current === 'past' ? 'bg-gold' : ''}`}>
+			<li class={`hover:cursor-pointer  ${current === 'past' ? 'bg-[#C5A46D]' : ''}`}>
 				<a href="#past">{$_('menu.past')}</a>
 			</li>
-			<li class={`hover:cursor-pointer ${current === 'present' ? 'bg-orange' : ''}`}>
+			<li class={`hover:cursor-pointer ${current === 'present' ? 'bg-[#CA6C37]' : ''}`}>
 				<a href="#present">{$_('menu.present')}</a>
 			</li>
-			<li class={`hover:cursor-pointer ${current === 'future' ? 'bg-red' : ''}`}>
+			<li class={`hover:cursor-pointer ${current === 'future' ? 'bg-[#7B0F12]' : ''}`}>
 				<a href="#future">{$_('menu.future')}</a>
 			</li>
-			<li class={`hover:cursor-pointer ${current === 'about' ? 'bg-black' : ''}`}>
+			<li class={`hover:cursor-pointer ${current === 'about' ? 'bg-[#262626]' : ''}`}>
 				<a href="#about">{$_('menu.about')}</a>
 			</li>
 		</ul>
