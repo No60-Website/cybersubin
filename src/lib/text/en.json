@@ -62,9 +62,15 @@
 	},
 	"future": {
 		"hero1": {
+			"title": "Learning Dance Movements through No. 60 and AI",
 			"p1": "*We invite you to learn together with teachers, artists, and a new generation of secondary school students.*",
 			"p2": "As the world moves toward the age of data, virtual environments, and AI, how can we use these tools to both *preserve* and *reimagine* Thai classical dance?",
 			"p3": "*No.60* is a learning system designed to explain foundational master dance movements through a clear, structured framework, open space for teachers and students to experiment and create new movements from traditional foundations,  and use AI as a *teaching assistant* for exploration, practice, reflection, and creative development."
+		},
+		"hub": {
+			"title": "Join *No.60* Hub to access courses, exercises, and teaching resources designed for both teachers and students.",
+			"button_signup": "Create an Account to Start Learning",
+			"button_login": "Log In"
 		},
 		"hero2": {
 			"p1": "The project was debuted at the National Theatre in Taiwan in March 2024. As the human dancer physically challenges, resists, follows, and improvises with the virtual dance partner's computational interpretations of traditional dance vocabularies, intriguing frictions arise that highlight each intelligence's distinct perspectives and capabilities. This dynamism suggests rich questions around autonomy, influence, control, and co-dependence as humans and virtual agents entangle through points of resonance and dissonance. Such interplay prompts vital discourses on the essence of the human spirit and freedom when choreographically coupled with non-human outputs operating in the same social and cultural space."

@@ -10,11 +10,7 @@
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]">
 			<!-- Left Column -->
 			<div class="flex flex-col pl-8">
-				<Title_wild
-					head={$_('menu.future')}
-					title="Learning Dance Movements through No. 60 and AI"
-					color="text-red"
-				/>
+				<Title_wild head={$_('menu.future')} title={$_('future.hero1.title')} color="text-red" />
 				<div class="flex-auto"></div>
 				<p class="text-sm leading-relaxed">
 					<HighlightText text={$_('future.hero1.p1')} highlightColor="#C5A46D" />
@@ -48,19 +44,18 @@
 	<!-- Center Content -->
 	<div class="flex flex-col items-center gap-6 text-center">
 		<p class="text-lg">
-			Join <span class="text-red">No.60 Hub</span> to access courses, exercises, and teaching resources
-			designed for both teachers and students.
+			<HighlightText text={$_('future.hub.title')} highlightColor="#E63946" />
 		</p>
 		<div class="flex gap-4">
 			<button
 				class="rounded-[20px] border border-[#E63946] px-6 py-2 text-[#E63946] hover:border-[#7B0F12] hover:bg-[#7B0F12] hover:text-black"
 			>
-				Create an Account to Start Learning
+				{$_('future.hub.button_signup')}
 			</button>
 			<button
 				class="rounded-[20px] border border-white px-6 py-2 text-white hover:bg-white hover:text-black"
 			>
-				Log In
+				{$_('future.hub.button_login')}
 			</button>
 		</div>
 	</div>
