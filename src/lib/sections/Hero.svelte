@@ -13,7 +13,7 @@
 
 <div
 	class="flex h-[100svh] flex-col text-white"
-	style="background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center; background-attachment: fixed;"
+	style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center; background-attachment: fixed;"
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
 		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
@@ -23,13 +23,15 @@
 			<a href="#about" class="hover:cursor-pointer hover:bg-[#262626]">{$_('menu.about')}</a>
 		</div>
 	</nav>
-	<div class="flex h-full flex-col justify-between gap-6 p-6 md:items-center md:justify-center">
+	<div
+		class="flex h-full flex-col justify-center gap-4 p-6 text-center md:items-center md:justify-center md:text-left"
+	>
 		<div>
-			<div class="mt-12 text-[6rem] font-bold leading-none sm:text-8xl md:mt-0">
+			<div class="text-[72px] font-bold leading-none sm:text-8xl md:mt-0">
 				<h1>No.60</h1>
 			</div>
 		</div>
-		<h5 class="max-w-[12rem] text-base text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
+		<h5 class="text-[13px] text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
 			{$_('hero.description_line1')} <br />
 			{$_('hero.description_line2')}
 		</h5>

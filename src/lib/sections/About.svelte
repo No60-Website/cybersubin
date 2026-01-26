@@ -6,15 +6,15 @@
 	class="grid bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:h-[100svh] md:grid-cols-3"
 >
 	{#if $locale === 'th'}
-		<div class="pl-6 md:w-11/12 xl:pl-12">
-			<div class="mb-6">
+		<div class="md:w-11/12 md:pl-6 xl:pl-12">
+			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
 					alt="Logo"
-					class="h-auto w-full max-w-xs md:h-[116px] md:w-[199px]"
+					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul>
+			<ul class="pl-6">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>ชยภัทร อาชีวระงับโรค</li>
 				<li>ภูมิปรินทร์ มะโน</li>
@@ -87,15 +87,15 @@
 			</ul>
 		</div>
 	{:else}
-		<div class="pl-6 md:w-11/12 xl:pl-12">
-			<div class="mb-6">
+		<div class="md:w-11/12 md:pl-6 xl:pl-12">
+			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
 					alt="Logo"
-					class="h-auto w-full max-w-xs md:h-[116px] md:w-[199px]"
+					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul>
+			<ul class="pl-6">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>Chayapatr Archiwaranguprok</li>
 				<li>Phoomparin Mano</li>

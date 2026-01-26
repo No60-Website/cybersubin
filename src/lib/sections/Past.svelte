@@ -2,6 +2,7 @@
 	import Carousel from '$lib/Components/Carousel.svelte';
 	import Description from '$lib/Components/Description.svelte';
 	import Title from '$lib/Components/Title.svelte';
+	import Title_wild from '$lib/Components/Title_wild.svelte';
 	import { mvtSet } from '$lib/store';
 	import { _ } from 'svelte-i18n';
 </script>
@@ -10,7 +11,13 @@
 	class="relative grid grid-cols-1 bg-black text-white md:ml-10 md:mt-[calc(-100svh_-_2.6rem)] xl:grid-cols-3"
 >
 	<div class="space-y-8 p-6 lg:px-8">
-		<Title head={$_('menu.past')} title={$_('past.title')} color="text-gold" />
+		<Title_wild
+			head={$_('menu.past')}
+			title={$_('past.title')}
+			color="text-gold"
+			h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+			h4Class="font-bold md:font-normal"
+		/>
 		<p class="text-balance lg:w-11/12">
 			{$_('past.hero1.intro')}
 		</p>
@@ -84,7 +91,7 @@
 				<Carousel set={mvtSet} />
 			{/key}
 		</div>
-		<div class="absolute bottom-0 m-4 flex w-full justify-center">
+		<div class="absolute bottom-0 flex w-full justify-center">
 			<p class="max-w-xs text-center">{$_('past.pose')}</p>
 		</div>
 	</div>
@@ -95,7 +102,13 @@
 	id="past-end"
 >
 	<div class="flex flex-col gap-4 px-6 md:gap-16 lg:px-8">
-		<Title head={$_('menu.past')} title={$_('past.title')} color="text-gold" />
+		<Title
+			head={$_('menu.past')}
+			title={$_('past.title')}
+			color="text-gold"
+			h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+			h4Class="font-bold md:font-normal"
+		/>
 		<p class="max-w-64 text-white">{$_('past.hero2.tagline')}</p>
 		<div class="flex border-l border-l-gold pl-4 text-sm text-gold">
 			<p class="max-w-32">{$_('past.hero2.caption')}</p>

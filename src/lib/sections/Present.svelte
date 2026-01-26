@@ -58,7 +58,13 @@
 	</div> -->
 	<div class="grid p-6 pt-12 md:grid-cols-3 lg:px-10" bind:this={sectionTop}>
 		<div>
-			<Title head={$_('menu.present')} title="No.60" color="text-orange" />
+			<Title
+				head={$_('menu.present')}
+				title="No.60"
+				color="text-orange"
+				h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+				h4Class="font-medium md:font-normal"
+			/>
 		</div>
 		<div />
 		<div class="flex-col items-end gap-2 pt-8 md:flex md:text-right lg:mx-10 lg:pt-0">
