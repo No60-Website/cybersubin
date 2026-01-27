@@ -8,5 +8,5 @@
 
 <div>
 	<h2 class={`text-2xl font-bold md:text-3xl ${color}`}>{head}</h2>
-	<h4 style={h4Style} class={`text-4xl text-white md:text-6xl ${h4Class}`}>{title}</h4>
+	<h4 style={h4Style} class={`text-5xl text-white md:text-6xl ${h4Class}`}>{title}</h4>
 </div>

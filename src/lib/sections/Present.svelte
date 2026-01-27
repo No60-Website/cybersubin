@@ -62,7 +62,7 @@
 				head={$_('menu.present')}
 				title="No.60"
 				color="text-orange"
-				h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+				h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
 				h4Class="font-medium md:font-normal"
 			/>
 		</div>

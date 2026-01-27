@@ -15,7 +15,7 @@
 			head={$_('menu.past')}
 			title={$_('past.title')}
 			color="text-gold"
-			h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+			h4Style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
 			h4Class="font-bold md:font-normal"
 		/>
 		<p class="text-balance lg:w-11/12">
@@ -106,7 +106,7 @@
 			head={$_('menu.past')}
 			title={$_('past.title')}
 			color="text-gold"
-			h4Style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+			h4Style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
 			h4Class="font-bold md:font-normal"
 		/>
 		<p class="max-w-64 text-white">{$_('past.hero2.tagline')}</p>

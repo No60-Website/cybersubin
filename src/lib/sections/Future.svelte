@@ -10,7 +10,12 @@
 		<div class="grid grid-cols-1 gap-8 lg:grid-cols-[2fr_1fr]">
 			<!-- Left Column -->
 			<div class="flex flex-col">
-				<Title_wild head={$_('menu.future')} title={$_('future.hero1.title')} color="text-red" />
+				<Title_wild
+					head={$_('menu.future')}
+					title={$_('future.hero1.title')}
+					color="text-red"
+					h4Style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; md:text-[60px]; font-weight: 400;"
+				/>
 				<div class="flex-auto"></div>
 				<p class="pt-[10px] text-sm leading-relaxed">
 					<HighlightText text={$_('future.hero1.p1')} highlightColor="#C5A46D" />
@@ -38,25 +43,25 @@
 	<!-- Top Header with Left and Right Text -->
 	<div class="flex items-center justify-between">
 		<h2
-			class={`font-bold text-red md:w-min md:pl-8 md:text-6xl`}
-			style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 48px;"
+			class={`font-bold text-[#E63946] md:w-min md:pl-8 md:text-6xl`}
+			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
 		>
 			{$_('try')}
 		</h2>
-		<h2 class={`text-[36px] text-red md:w-min md:text-3xl`}>No.60</h2>
+		<h2 class={`text-[36px] text-[#E63946] md:w-min md:text-3xl`}>No.60</h2>
 	</div>
 
 	<!-- Center Content -->
 	<div class="flex flex-col items-center gap-6 text-center">
 		<p
 			class="text-[22px]"
-			style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; "
+			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; "
 		>
 			<HighlightText text={$_('future.hub.title')} highlightColor="#E63946" />
 		</p>
 		<div
 			class="flex flex-col gap-4 md:flex-row"
-			style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
+			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
 		>
 			<button
 				class="rounded-[20px] border border-[#E63946] px-6 py-2 text-[17px] text-[#E63946] hover:border-[#7B0F12] hover:bg-[#7B0F12] hover:text-black"

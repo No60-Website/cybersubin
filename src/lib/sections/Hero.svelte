@@ -13,7 +13,7 @@
 
 <div
 	class="flex h-[100svh] flex-col text-white"
-	style="font-family: 'Archivo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center; background-attachment: fixed;"
+	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center; background-attachment: fixed;"
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
 		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
@@ -31,10 +31,10 @@
 				<h1>No.60</h1>
 			</div>
 		</div>
-		<h5 class="text-[13px] text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
+		<p class="text-[13px] text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
 			{$_('hero.description_line1')} <br />
 			{$_('hero.description_line2')}
-		</h5>
+		</p>
 	</div>
 
 	<div class="absolute bottom-0 right-0 p-4 md:p-6">
