@@ -16,6 +16,9 @@ jobs:
       - name: Setup mise
         uses: jdx/mise-action@v3
 
+      - name: Enable corepack
+        run: corepack enable
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
