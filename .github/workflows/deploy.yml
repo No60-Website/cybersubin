@@ -40,4 +40,4 @@ jobs:
           RCLONE_CONFIG_FTP_USER: ${{ secrets.FTP_USER }}
           RCLONE_CONFIG_FTP_PASS: ${{ secrets.FTP_PASSWORD }}
           RCLONE_CONFIG_FTP_EXPLICIT_TLS: 'true'
-        run: rclone copy ./build ftp: --progress
+        run: 'rclone copy ./build ftp: --progress'
