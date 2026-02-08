@@ -36,7 +36,7 @@
 				{$_('intro.p2')}
 			</p>
 			<div>
-				<a href="https://cybersubin.media.mit.edu" class="btn">{$_('intro.button')} ↗</a>
+				<a href="https://learn.pkdance.co/" class="btn">{$_('intro.button')} ↗</a>
 			</div>
 		</div>
 	</div>

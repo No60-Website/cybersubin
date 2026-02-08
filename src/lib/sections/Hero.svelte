@@ -32,8 +32,7 @@
 			</div>
 		</div>
 		<p class="text-[13px] text-[#C5A46D] md:max-w-lg md:text-center md:text-xl">
-			{$_('hero.description_line1')} <br />
-			{$_('hero.description_line2')}
+			{$_('hero.description_line1')}
 		</p>
 	</div>
 

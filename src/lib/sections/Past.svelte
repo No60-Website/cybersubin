@@ -25,16 +25,13 @@
 	<div class="col-span-2">
 		<div class="relative w-full md:aspect-video md:border-y xl:border-none">
 			<img src="/maebot.png" class="min-h-full min-w-full object-cover" alt="" />
-			<div class="left-0 top-0 text-pretty p-6 md:absolute lg:w-11/12">
+			<!-- <div class="left-0 top-0 text-pretty p-6 md:absolute lg:w-11/12">
 				<p>
 					{$_('past.hero1.img')}
 				</p>
-			</div>
+			</div> -->
 		</div>
 		<div class="bottom-0 hidden flex-col gap-4 p-6 pt-0 md:absolute md:flex xl:hidden">
-			<a href="https://disco.teak.fi/asia/thai-classical-dance/" class="btn"
-				>{$_('past.hero1.btn.dance')} ↗</a
-			>
 			<a
 				href="https://www.google.com/books/edition/Lives_in_Motion/DKLfEAAAQBAJ?hl=en&gbpv=1&dq=Mae+Bot+Yai&pg=PT61&printsec=frontcover"
 				class="btn">{$_('past.hero1.btn.history')} ↗</a
@@ -42,9 +39,6 @@
 		</div>
 	</div>
 	<div class="bottom-0 flex flex-col gap-4 p-6 pt-0 md:absolute md:hidden lg:px-8 xl:flex">
-		<a href="https://disco.teak.fi/asia/thai-classical-dance/" class="btn"
-			>{$_('past.hero1.btn.dance')} ↗</a
-		>
 		<a
 			href="https://www.google.com/books/edition/Lives_in_Motion/DKLfEAAAQBAJ?hl=en&gbpv=1&dq=Mae+Bot+Yai&pg=PT61&printsec=frontcover"
 			class="btn">{$_('past.hero1.btn.history')} ↗</a
@@ -55,6 +49,12 @@
 <div
 	class="relative flex h-[120svh] flex-col overflow-hidden bg-gradient-to-b from-black to-neutral-800 text-white md:ml-10 md:h-[90svh] lg:h-[100svh] xl:h-[110svh]"
 >
+	<h4
+		style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
+		class="pb-[20px] pt-[40px] text-center text-4xl text-white md:text-6xl md:font-normal"
+	>
+		{$_('past.header')}
+	</h4>
 	<Description
 		textColor="text-gold"
 		text={{

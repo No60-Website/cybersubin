@@ -5,7 +5,7 @@ register('th', () => import('./text/th.json'));
 
 export const i18nInit = () => {
 	init({
-		fallbackLocale: 'en',
-		initialLocale: getLocaleFromNavigator()
+		fallbackLocale: 'th',
+		initialLocale: 'th'
 	});
 };

@@ -3,8 +3,7 @@
 	"hero": {
 		"cyber": "cyber",
 		"subin": "subin",
-		"description_line1": "Decoding Dance:",
-		"description_line2": "Transforming Physical Movement into Data"
+		"description_line1": "When dance moves beyond fixed forms"
 	},
 	"menu": {
 		"past": "Past",
@@ -21,8 +20,7 @@
 	"past": {
 		"title": "Mae Bot Yai",
 		"hero1": {
-			"intro": "One might think that innovation and preservation are on opposite ends, but in 1924, the arrival of camera technology allowed the knowledge of \"Mae Bot Yai\" to be recorded and formalized, creating a record of Thai dance techniques that are still used to this day.",
-			"img": "We begin our journey with \"Mae Bot Yai\" (the \"Greater Fundamentals\"), a set of 59 interconnected poses that constitute the foundation of traditional Thai dance. These fundamentals enable dancers to execute the demanding choreography of \"Khon\", a Thai classical court masked dance with a history spanning centuries.",
+			"intro": "Mae Bot Yai is the foundation of Thai classical dance. It is the blueprint of movement—a structural system that shapes discipline, focus, and bodily awareness in the dancer. In 1924, the arrival of photographic technology made it possible for knowledge of Mae Bot Yai to be documented, organized, and transmitted in tangible form. This process laid the groundwork for Thai dance techniques that are still practiced today, often articulated through a core set of 59 principal movements. But if dance is understood as a \"language,\" the essential question may not be how many movements exist, or what we choose to call them. Rather, it is a question of perspective: are we reading dance through the visible shapes of movements, or through the underlying structures of motion? This is where the concept of No.60 emerges—not as a \"new movement,\" but as a space for continuation and expansion, through a deeper understanding of structure and the elements that organize the moving body.",
 			"btn": {
 				"dance": "Thai Traditional Dance",
 				"history": "History of Mae Bot Yai"
@@ -31,6 +29,7 @@
 		"movement": "Movement",
 		"caption": "59 poses that constitute the foundation of traditional Thai dance",
 		"pose": "Select the pose of interest and see its 3D recording",
+		"header": "Movement Structure and Motion",
 		"hero2": {
 			"tagline": "Understand the Past to Understand the Future",
 			"caption": "Mae Bot Yai recorded on camera in 1924",
