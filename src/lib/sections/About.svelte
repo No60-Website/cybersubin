@@ -177,9 +177,9 @@
 			<img
 				src="/Thai-media-logo.png"
 				alt="Thai Media Fund"
-				class="h-[150px] w-auto object-contain"
+				class="h-[180px] w-auto object-contain"
 			/>
-			<img src="/tkpark-logo.png" alt="TK Park" class="h-[150px] w-auto object-contain" />
+			<img src="/tkpark-logo.png" alt="TK Park" class="h-[180px] w-auto object-contain" />
 		</div>
 	</div>
 </div>

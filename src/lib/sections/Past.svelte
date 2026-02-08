@@ -10,10 +10,10 @@
 <div
 	class="relative grid grid-cols-1 bg-black text-white md:ml-10 md:mt-[calc(-100svh_-_2.6rem)] xl:grid-cols-3"
 >
-	<div class="space-y-8 p-6 lg:px-8">
+	<div class="space-y-8 p-6 md:pb-20 lg:px-8">
 		<Title_wild
 			head={$_('menu.past')}
-			title={$_('past.title')}
+			title={$_('past.title') + '\n' + $_('past.title2')}
 			color="text-gold"
 			h4Style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
 			h4Class="font-bold md:font-normal"
