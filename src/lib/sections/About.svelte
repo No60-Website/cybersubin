@@ -1,9 +1,9 @@
 <script>
-	import { locale } from 'svelte-i18n';
+	import { locale, _ } from 'svelte-i18n';
 </script>
 
 <div
-	class="grid bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:h-[100svh] md:grid-cols-3"
+	class="grid bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:min-h-[100svh] md:grid-cols-3"
 >
 	{#if $locale === 'th'}
 		<div class="md:w-11/12 md:pl-6 xl:pl-12">
@@ -168,4 +168,18 @@
 			</ul>
 		</div>
 	{/if}
+
+	<div class="col-span-full mt-12 px-6 pb-12 pt-12">
+		<h2 class="mb-8 text-center text-5xl font-bold text-white md:text-[48px]">
+			{$_('partners.title')}
+		</h2>
+		<div class="flex flex-wrap items-center justify-center gap-12">
+			<img
+				src="/Thai-media-logo.png"
+				alt="Thai Media Fund"
+				class="h-[150px] w-auto object-contain"
+			/>
+			<img src="/tkpark-logo.png" alt="TK Park" class="h-[150px] w-auto object-contain" />
+		</div>
+	</div>
 </div>
