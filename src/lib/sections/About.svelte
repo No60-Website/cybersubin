@@ -15,24 +15,20 @@
 				/>
 			</div>
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Open Lab:</span></li>
+				<li><span class="font-bold">Generative AI:</span></li>
 				<li>ชยภัทร อาชีวระงับโรค</li>
 				<li>ภูมิปรินทร์ มะโน</li>
 				<li>ปิยพร พงษ์ทอง</li>
 				<li>พิเชษฐ์ กลั่นชื่น</li>
 				<li>พัทธ์ ภัทรานุธาพร</li>
+				<li>กรกาญจน์ รุ่งสว่าง</li>
+				<li>ธนพล สุขสมรูป</li>
 			</ul>
 		</div>
 
 		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Co-creator:</span></li>
-				<li>พิเชษฐ์ กลั่นชื่น</li>
-				<li>พัทธ์ ภัทรานุธาพร</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Choreographer/Director:</span></li>
+				<li><span class="font-bold">Artist/Choreographer/Director:</span></li>
 				<li>พิเชษฐ์ กลั่นชื่น</li>
 			</ul>
 
@@ -96,24 +92,20 @@
 				/>
 			</div>
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Open Lab:</span></li>
+				<li><span class="font-bold">Generative AI:</span></li>
 				<li>Chayapatr Archiwaranguprok</li>
 				<li>Phoomparin Mano</li>
 				<li>Piyaporn Bhongse-tong</li>
 				<li>Pichet Klunchun</li>
 				<li>Pat Pataranutaporn</li>
+				<li>Kornkarn Rungsawang</li>
+				<li>Thanapon Suksomroop</li>
 			</ul>
 		</div>
 
 		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Co-creator:</span></li>
-				<li>Pichet Klunchun</li>
-				<li>Pat Pataranutaporn</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Choreographer/Director:</span></li>
+				<li><span class="font-bold">Artist/Choreographer/Director:</span></li>
 				<li>Pichet Klunchun</li>
 			</ul>
 
