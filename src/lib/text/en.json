@@ -77,7 +77,9 @@
 		}
 	},
 	"partners": {
-		"title": "Partner & Supporters"
+		"title": "Partner & Supporters",
+		"about_title": "About this project",
+		"about_text": "This project aims to develop Thai media to connect with the modern world through learning about traditional physical culture, technology, and the 'No. 60' concept, which helps elevate Thai dance into a system to create educational, professional, and creative economy opportunities in performing arts for students and teachers nationwide, while promoting Thai culture to the international stage sustainably, with support from the Thai Media Fund."
 	},
 	"dialog": {
 		"caption": "Pichet Klunchun performing Movement",

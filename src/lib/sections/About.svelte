@@ -3,10 +3,10 @@
 </script>
 
 <div
-	class="grid bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:min-h-[100svh] md:grid-cols-3"
+	class="grid items-center bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:min-h-[100svh] md:grid-cols-3 md:items-start"
 >
 	{#if $locale === 'th'}
-		<div class="md:w-11/12 md:pl-6 xl:pl-12">
+		<div class="flex flex-col items-center md:w-11/12 md:items-start md:pl-6 xl:pl-12">
 			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
@@ -14,7 +14,7 @@
 					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul class="pl-6">
+			<ul class="text-center md:pl-6 md:text-left">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>ชยภัทร อาชีวระงับโรค</li>
 				<li>ภูมิปรินทร์ มะโน</li>
@@ -24,19 +24,19 @@
 			</ul>
 		</div>
 
-		<div class="space-y-6 p-6 md:w-11/12 md:p-0">
-			<ul>
+		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Co-creator:</span></li>
 				<li>พิเชษฐ์ กลั่นชื่น</li>
 				<li>พัทธ์ ภัทรานุธาพร</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Choreographer/Director:</span></li>
 				<li>พิเชษฐ์ กลั่นชื่น</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dancers:</span></li>
 				<li>ผดุง จุมพันธ์</li>
 				<li>ธรรศ จงจัดกลาง</li>
@@ -44,50 +44,50 @@
 				<li>King Fai Tsang</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Music Director and Composer:</span></li>
 				<li>ลำธาร หาญตระกูล</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">3D and Animation Creator:</span></li>
 				<li>ปิยพร พงษ์ทอง</li>
 			</ul>
 		</div>
 
-		<div class="space-y-6 p-6 md:w-11/12 md:p-0">
-			<ul>
+		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Creative Technologist:</span></li>
 				<li>ภูมิปรินทร์ มะโน</li>
 				<li>ชยภัทร อาชีวระงับโรค</li>
 			</ul>
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Cyborg Scientist and Philosopher:</span></li>
 				<li>พัทธ์ ภัทรานุธาพร</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Lighting Designer:</span></li>
 				<li>Ray Tseng</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dramaturg:</span></li>
 				<li>How Ngean Lim</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Producer:</span></li>
 				<li>โศจิรัตน์ สิงหลกะ</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Stage Manager:</span></li>
 				<li>จิรัช เอี่ยมสะอาด</li>
 			</ul>
 		</div>
 	{:else}
-		<div class="md:w-11/12 md:pl-6 xl:pl-12">
+		<div class="flex flex-col items-center md:w-11/12 md:items-start md:pl-6 xl:pl-12">
 			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
@@ -95,7 +95,7 @@
 					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul class="pl-6">
+			<ul class="pl-6 text-center md:text-left">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>Chayapatr Archiwaranguprok</li>
 				<li>Phoomparin Mano</li>
@@ -105,19 +105,19 @@
 			</ul>
 		</div>
 
-		<div class="space-y-6 p-6 md:w-11/12 md:p-0">
-			<ul>
+		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Co-creator:</span></li>
 				<li>Pichet Klunchun</li>
 				<li>Pat Pataranutaporn</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Choreographer/Director:</span></li>
 				<li>Pichet Klunchun</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dancers:</span></li>
 				<li>Padung Jumpan</li>
 				<li>Tas Chongchadklang</li>
@@ -125,61 +125,79 @@
 				<li>King Fai Tsang</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Music AI Director and Composer:</span></li>
 				<li>Lamtharn Hantrakul</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">3D and Animation Creator:</span></li>
 				<li>Piyaporn Bhongse-tong</li>
 			</ul>
 		</div>
 
-		<div class="space-y-6 p-6 md:w-11/12 md:p-0">
-			<ul>
+		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Creative Technologist:</span></li>
 				<li>Phoomparin Mano</li>
 				<li>Chayapatr Archiwaranguprok</li>
 			</ul>
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Cyborg Scientist and Philosopher:</span></li>
 				<li>Pat Pataranutaporn</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Lighting Designer:</span></li>
 				<li>Ray Tseng</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dramaturg:</span></li>
 				<li>How Ngean Lim</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Producer:</span></li>
 				<li>Sojirat Singholka</li>
 			</ul>
 
-			<ul>
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Stage Manager:</span></li>
 				<li>Jirach Eaimsa-Ard</li>
 			</ul>
 		</div>
 	{/if}
 
-	<div class="col-span-full mt-12 px-6 pb-12 pt-12">
-		<h2 class="mb-8 text-center text-5xl font-bold text-white md:text-[48px]">
-			{$_('partners.title')}
-		</h2>
-		<div class="flex flex-wrap items-center justify-center gap-12">
-			<img
-				src="/Thai-media-logo.png"
-				alt="Thai Media Fund"
-				class="h-[180px] w-auto object-contain"
-			/>
-			<img src="/tkpark-logo.png" alt="TK Park" class="h-[180px] w-auto object-contain" />
+	<!-- Partner section -->
+	<div class="col-span-full mt-12 grid grid-cols-1 gap-12 px-6 pb-12 pt-12 md:grid-cols-2 md:pl-12">
+		<!-- About this project - Left column -->
+		<div class="flex flex-col items-center text-center md:items-start md:pl-6 md:text-left">
+			<h2 class="mb-6 text-2xl font-bold text-white md:text-3xl">
+				{$_('partners.about_title')}
+			</h2>
+			<p class="max-w-xl text-base leading-relaxed text-white/90 md:text-lg">
+				{$_('partners.about_text')}
+			</p>
+		</div>
+
+		<!-- Partner & Supporters - Right column -->
+		<div class="flex flex-col items-center">
+			<h2 class="mb-8 text-2xl font-bold text-white md:text-3xl">
+				{$_('partners.title')}
+			</h2>
+			<div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+				<img
+					src="/Thai-media-logo.png"
+					alt="Thai Media Fund"
+					class="h-[120px] w-auto object-contain md:h-[180px]"
+				/>
+				<img
+					src="/tkpark-logo.png"
+					alt="TK Park"
+					class="h-[120px] w-auto object-contain md:h-[180px]"
+				/>
+			</div>
 		</div>
 	</div>
 </div>
