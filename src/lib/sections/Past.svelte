@@ -3,7 +3,8 @@
 	import Description from '$lib/Components/Description.svelte';
 	import Title from '$lib/Components/Title.svelte';
 	import Title_wild from '$lib/Components/Title_wild.svelte';
-	import { mvtSet } from '$lib/store';
+	import PastPopup from '$lib/Components/PastPopup.svelte';
+	import { mvtSet, openPastDialog } from '$lib/store';
 	import { _ } from 'svelte-i18n';
 </script>
 
@@ -31,17 +32,23 @@
 				</p>
 			</div> -->
 		</div>
+		<!-- Popup button md -->
 		<div class="bottom-0 hidden flex-col gap-4 p-6 pt-0 md:absolute md:flex xl:hidden">
-			<a
-				href="https://www.google.com/books/edition/Lives_in_Motion/DKLfEAAAQBAJ?hl=en&gbpv=1&dq=Mae+Bot+Yai&pg=PT61&printsec=frontcover"
-				class="btn">{$_('past.hero1.btn.history')} ↗</a
+			<button
+				on:click={() => {
+					$openPastDialog = true;
+				}}
+				class="btn">{$_('past.hero1.btn.history')} ↗</button
 			>
 		</div>
 	</div>
+	<!-- Popup button sm -->
 	<div class="bottom-0 flex flex-col gap-4 p-6 pt-0 md:absolute md:hidden lg:px-8 xl:flex">
-		<a
-			href="https://www.google.com/books/edition/Lives_in_Motion/DKLfEAAAQBAJ?hl=en&gbpv=1&dq=Mae+Bot+Yai&pg=PT61&printsec=frontcover"
-			class="btn">{$_('past.hero1.btn.history')} ↗</a
+		<button
+			on:click={() => {
+				$openPastDialog = true;
+			}}
+			class="btn">{$_('past.hero1.btn.history')} ↗</button
 		>
 	</div>
 </div>
@@ -91,13 +98,17 @@
 				<Carousel set={mvtSet} />
 			{/key}
 		</div>
-		<div class="absolute bottom-0 flex w-full justify-center">
+		<div class="absolute bottom-0 flex w-full justify-center pb-6">
 			<p class="max-w-xs text-center">{$_('past.pose')}</p>
 		</div>
 	</div>
 </div>
 
-<div
+{#if $openPastDialog}
+	<PastPopup />
+{/if}
+
+<!-- <div
 	class="grid grid-cols-1 bg-gradient-to-b from-neutral-800 to-black pb-12 pt-16 md:ml-10 md:grid-cols-3 lg:min-h-[100svh]"
 	id="past-end"
 >
@@ -131,7 +142,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <style>
 	.mvt-btn {

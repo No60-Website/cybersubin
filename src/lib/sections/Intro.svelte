@@ -23,7 +23,7 @@
 
 	<div class="my-10 grid gap-y-6 px-6 text-base md:p-12 md:pt-6 lg:grid-cols-3 lg:px-0">
 		<div class="lg:px-8">
-			<div class="mb-4 text-6xl md:text-8xl">100</div>
+			<div class="mb-4 text-6xl md:text-[55px]">{$_('intro.tagline1')}</div>
 			<p class="max-w-sm text-2xl">{$_('intro.tagline')}</p>
 		</div>
 		<div class="w-full text-balance lg:w-11/12">

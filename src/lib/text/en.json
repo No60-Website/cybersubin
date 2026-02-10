@@ -12,14 +12,18 @@
 		"about": "About"
 	},
 	"intro": {
-		"tagline": "year journey of Thai choreography from cultural root to integration with computer",
+		"tagline1": "The Origin of Dance",
+		"tagline": "Before history. Before manuals. Before the idea of \"steps.\"",
 		"p1": "Traditional dance forms serve as living cultural heritage, with choreographic knowledge transmitted through embodied practices. While digitization has enabled preservation, the deeper layers of tacit knowledge and improvisation remain frozen. This research introduces an approach to computationally formalize traditional dance knowledge as an interactive model, combining human dancers with virtual partners powered by computational systems derived from dance principles.",
 		"p2": "A multidisciplinary team developed a Human-AI system based on the \"No. 60\" principles established by Thai choreographer Pichet Klunchun, creating computational procedures to replicate the effects of the principles. This paradigm allows practitioners to interact with computational manifestations of ancestral choreographic knowledge, acknowledging non-Western knowledge systems often overlooked in colonial understandings of AI.",
 		"button": "Learn More"
 	},
 	"past": {
 		"title": "What is",
-		"title2": " Mae Bot Yai?",
+		"title2": "Mae Bot Yai?",
+		"popup1": "Mae",
+		"popup2": "Bot",
+		"popup3": "Yai",
 		"hero1": {
 			"intro": "Mae Bot Yai is the foundation of Thai classical dance. It is the blueprint of movement—a structural system that shapes discipline, focus, and bodily awareness in the dancer. In 1924, the arrival of photographic technology made it possible for knowledge of Mae Bot Yai to be documented, organized, and transmitted in tangible form. This process laid the groundwork for Thai dance techniques that are still practiced today, often articulated through a core set of 59 principal movements. But if dance is understood as a \"language,\" the essential question may not be how many movements exist, or what we choose to call them. Rather, it is a question of perspective: are we reading dance through the visible shapes of movements, or through the underlying structures of motion? This is where the concept of No.60 emerges—not as a \"new movement,\" but as a space for continuation and expansion, through a deeper understanding of structure and the elements that organize the moving body.",
 			"btn": {

@@ -4,6 +4,7 @@ import { writable } from 'svelte/store';
 export const current = writable(1);
 export const mvtSet = writable(0);
 export const openDialog = writable(false);
+export const openPastDialog = writable(false);
 
 export const element = writable('Energy');
 export const openElementDialog = writable(false);
