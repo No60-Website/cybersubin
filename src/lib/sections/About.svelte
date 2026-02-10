@@ -6,15 +6,15 @@
 	class="grid items-center bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:min-h-[100svh] md:grid-cols-3 md:items-start"
 >
 	{#if $locale === 'th'}
-		<div class="flex flex-col items-center md:w-11/12 md:items-start md:pl-6 xl:pl-12">
-			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
+		<div class="flex flex-col items-center md:w-11/12 md:items-start xl:pl-12">
+			<div class="mb-6 flex flex-col items-center md:items-start">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
 					alt="Logo"
 					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul class="text-center md:pl-6 md:text-left">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>ชยภัทร อาชีวระงับโรค</li>
 				<li>ภูมิปรินทร์ มะโน</li>
@@ -87,15 +87,15 @@
 			</ul>
 		</div>
 	{:else}
-		<div class="flex flex-col items-center md:w-11/12 md:items-start md:pl-6 xl:pl-12">
-			<div class="mb-6 flex flex-col items-center md:items-start md:pl-6">
+		<div class="flex flex-col items-center md:w-11/12 md:items-start xl:pl-12">
+			<div class="mb-6 flex flex-col items-center md:items-start">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
 					alt="Logo"
 					class="h-auto w-[200px] max-w-xs md:h-[116px] md:w-[199px]"
 				/>
 			</div>
-			<ul class="pl-6 text-center md:text-left">
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Open Lab:</span></li>
 				<li>Chayapatr Archiwaranguprok</li>
 				<li>Phoomparin Mano</li>
@@ -172,7 +172,7 @@
 	<!-- Partner section -->
 	<div class="col-span-full mt-12 grid grid-cols-1 gap-12 px-6 pb-12 pt-12 md:grid-cols-2 md:pl-12">
 		<!-- About this project - Left column -->
-		<div class="flex flex-col items-center text-center md:items-start md:pl-6 md:text-left">
+		<div class="flex flex-col items-center text-center md:items-start md:text-left">
 			<h2 class="mb-6 text-2xl font-bold text-white md:text-3xl">
 				{$_('partners.about_title')}
 			</h2>
