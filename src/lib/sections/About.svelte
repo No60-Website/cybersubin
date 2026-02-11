@@ -33,53 +33,39 @@
 			</ul>
 
 			<ul class="text-center md:text-left">
+				<li><span class="font-bold">Technology Advisors::</span></li>
+				<li>พัทธ์ ภัทรานุธาพร</li>
+				<li>ภูมิปรินทร์ มะโน</li>
+				<li>ชยภัทร อาชีวระงับโรค</li>
+			</ul>
+
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dancers:</span></li>
-				<li>ผดุง จุมพันธ์</li>
+				<li>กรกาญจน์ รุ่งสว่าง</li>
 				<li>ธรรศ จงจัดกลาง</li>
-				<li>Chang Hong Chung</li>
-				<li>King Fai Tsang</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Music Director and Composer:</span></li>
-				<li>ลำธาร หาญตระกูล</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">3D and Animation Creator:</span></li>
-				<li>ปิยพร พงษ์ทอง</li>
+				<li>สุนนท์ วชิรรวราการ</li>
+				<li>จุฬาลักษณ์ เอกวัฒนพันธ์</li>
 			</ul>
 		</div>
 
 		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Creative Technologist:</span></li>
-				<li>ภูมิปรินทร์ มะโน</li>
-				<li>ชยภัทร อาชีวระงับโรค</li>
-			</ul>
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Cyborg Scientist and Philosopher:</span></li>
-				<li>พัทธ์ ภัทรานุธาพร</li>
+				<li><span class="font-bold">Video Production:</span></li>
+				<li>ตรีเทพโปรดักชั่น</li>
 			</ul>
 
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Lighting Designer:</span></li>
-				<li>Ray Tseng</li>
+				<li><span class="font-bold">Website & LMS:</span></li>
+				<li>ปภัสสิริย์ อภิไพบูลย์</li>
+				<li>รินรดา เทพแก้ว</li>
+				<li>ไท ปังสกุลยานนท์</li>
 			</ul>
 
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Dramaturg:</span></li>
-				<li>How Ngean Lim</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Producer:</span></li>
+				<li><span class="font-bold">Management & Support Team:</span></li>
 				<li>โศจิรัตน์ สิงหลกะ</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Stage Manager:</span></li>
-				<li>จิรัช เอี่ยมสะอาด</li>
+				<li>กันต์พงศ์ ทวีสุข</li>
+				<li>ผดุง จุมพันธ์</li>
 			</ul>
 		</div>
 	{:else}
@@ -110,53 +96,39 @@
 			</ul>
 
 			<ul class="text-center md:text-left">
+				<li><span class="font-bold">Technology Advisors::</span></li>
+				<li>Pat Pataranutaporn</li>
+				<li>Phoomparin Mano</li>
+				<li>Chayapatr Archiwaranguprok</li>
+			</ul>
+
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Dancers:</span></li>
-				<li>Padung Jumpan</li>
+				<li>Kornkarn Rungsawang</li>
 				<li>Tas Chongchadklang</li>
-				<li>Chang Hong Chung</li>
-				<li>King Fai Tsang</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Music AI Director and Composer:</span></li>
-				<li>Lamtharn Hantrakul</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">3D and Animation Creator:</span></li>
-				<li>Piyaporn Bhongse-tong</li>
+				<li>Sunon Wachirawarakarn</li>
+				<li>Julaluck Eakwattanapun</li>
 			</ul>
 		</div>
 
 		<div class="flex flex-col items-center space-y-6 p-6 md:w-11/12 md:items-start md:p-0">
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Creative Technologist:</span></li>
-				<li>Phoomparin Mano</li>
-				<li>Chayapatr Archiwaranguprok</li>
-			</ul>
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Cyborg Scientist and Philosopher:</span></li>
-				<li>Pat Pataranutaporn</li>
+				<li><span class="font-bold">Video Production:</span></li>
+				<li>Threethep Production</li>
 			</ul>
 
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Lighting Designer:</span></li>
-				<li>Ray Tseng</li>
+				<li><span class="font-bold">Website & LMS:</span></li>
+				<li>Papatsiri Apipaiboon</li>
+				<li>Rinrada Thepkaew</li>
+				<li>Thai Pangsakulyanont</li>
 			</ul>
 
 			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Dramaturg:</span></li>
-				<li>How Ngean Lim</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Producer:</span></li>
+				<li><span class="font-bold">Management & Support Team:</span></li>
 				<li>Sojirat Singholka</li>
-			</ul>
-
-			<ul class="text-center md:text-left">
-				<li><span class="font-bold">Stage Manager:</span></li>
-				<li>Jirach Eaimsa-Ard</li>
+				<li>Kanpong Thaweesuk</li>
+				<li>Padung Jumpan</li>
 			</ul>
 		</div>
 	{/if}

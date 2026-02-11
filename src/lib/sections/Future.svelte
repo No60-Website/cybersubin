@@ -88,20 +88,22 @@
 			class="flex flex-col gap-4 md:flex-row"
 			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
 		>
-			<button
+			<a
+				href="https://learn.pkdance.co/"
 				class="rounded-[20px] border border-[#E63946] px-6 py-2 text-[17px] text-[#E63946] hover:border-[#7B0F12] hover:bg-[#7B0F12] hover:text-black"
 			>
 				{$_('future.hub.button_signup')}
-			</button>
-			<button
+			</a>
+			<a
+				href="https://learn.pkdance.co/login"
 				class="rounded-[20px] border border-white px-6 py-2 text-[17px] text-white hover:bg-white hover:text-black"
 			>
 				{$_('future.hub.button_login')}
-			</button>
+			</a>
 		</div>
 	</div>
 	<!-- Image -->
-	<div class="absolute left-0 top-0 z-0 h-[100svh] w-screen overflow-x-hidden">
+	<div class="pointer-events-none absolute left-0 top-0 z-0 h-[100svh] w-screen overflow-x-hidden">
 		<img
 			src="/hero/left-1.png"
 			style={`transform: translate3d(0px, ${parallax * 0.08}px, 0px); will-change: transform;`}
