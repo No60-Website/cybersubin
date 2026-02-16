@@ -3,8 +3,13 @@
 	import { locale, _ } from 'svelte-i18n';
 
 	let parallax = 0;
+	let isIOS = false;
 
 	onMount(() => {
+		// Detect iOS devices (iPhone, iPad, iPod)
+		// @ts-ignore
+		isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
 		document.addEventListener('scroll', () => {
 			parallax = window.scrollY;
 		});
@@ -13,6 +18,7 @@
 
 <div
 	class="hero-bg flex h-[100svh] flex-col text-white"
+	class:ios-device={isIOS}
 	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center;"
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
@@ -61,9 +67,8 @@
 </div>
 
 <style>
-	@media (min-width: 768px) {
-		.hero-bg {
-			background-attachment: fixed;
-		}
+	/* Apply fixed background to ALL devices except iOS */
+	.hero-bg:not(.ios-device) {
+		background-attachment: fixed;
 	}
 </style>
