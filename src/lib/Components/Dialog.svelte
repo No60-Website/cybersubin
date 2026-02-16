@@ -31,6 +31,23 @@
 		</h3>
 		<div class="w-full gap-2 overflow-hidden md:flex md:flex-row">
 			<div
+				class="relative hidden aspect-[3/4] w-full overflow-hidden rounded-md border border-neutral-700 bg-black md:block"
+			>
+				<img src={`/original/${$current}.jpg`} class="min-h-full min-w-full object-cover" alt="" />
+				<div class="absolute left-0 top-0 h-full w-full" style={`opacity: ${opacity}%`}>
+					<img src={`/diagram/${$current}.png`} class="min-h-full min-w-full object-cover" alt="" />
+				</div>
+				<div class="absolute bottom-0 left-0 z-50 mb-2 h-8 w-full px-4">
+					<input
+						type="range"
+						name=""
+						bind:value={opacity}
+						class="mb-6 h-1 w-full cursor-pointer appearance-none rounded-lg bg-neutral-500 accent-neutral-200"
+						id=""
+					/>
+				</div>
+			</div>
+			<div
 				class="relative aspect-[3/4] max-h-full w-full overflow-hidden rounded-md border border-neutral-700 bg-black hover:cursor-grab"
 			>
 				{#key $current}
@@ -73,23 +90,7 @@
 					</div>
 				{/if}
 			</div>
-			<div
-				class="relative hidden aspect-[3/4] w-full overflow-hidden rounded-md border border-neutral-700 bg-black md:block"
-			>
-				<img src={`/original/${$current}.jpg`} class="min-h-full min-w-full object-cover" alt="" />
-				<div class="absolute left-0 top-0 h-full w-full" style={`opacity: ${opacity}%`}>
-					<img src={`/diagram/${$current}.png`} class="min-h-full min-w-full object-cover" alt="" />
-				</div>
-				<div class="absolute bottom-0 left-0 z-50 mb-2 h-8 w-full px-4">
-					<input
-						type="range"
-						name=""
-						bind:value={opacity}
-						class="mb-6 h-1 w-full cursor-pointer appearance-none rounded-lg bg-neutral-500 accent-neutral-200"
-						id=""
-					/>
-				</div>
-			</div>
+
 			<div class="mt-3 flex items-center justify-center gap-2 md:hidden">
 				<div>3D</div>
 				<div
