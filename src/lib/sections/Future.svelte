@@ -41,13 +41,13 @@
 		<div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
 			<!-- Left Column - Text -->
 			<div class="space-y-6">
-				<p class="text-sm leading-relaxed">
+				<p class="leading-relaxed">
 					<HighlightText text={$_('future.hero1.p2')} highlightColor="#C5A46D" />
 				</p>
-				<p class="text-sm leading-relaxed">
+				<p class="leading-relaxed">
 					<HighlightText text={$_('future.hero1.p3')} highlightColor="#C5A46D" />
 				</p>
-				<p class="text-sm leading-relaxed">
+				<p class="leading-relaxed">
 					<HighlightText text={$_('future.hero1.p1')} highlightColor="#C5A46D" />
 				</p>
 			</div>
