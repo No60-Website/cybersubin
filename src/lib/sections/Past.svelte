@@ -17,7 +17,7 @@
 			title={$_('past.title') + '\n' + $_('past.title2')}
 			color="text-gold"
 			h4Style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
-			h4Class="font-bold md:font-normal"
+			h4Class="font-medium md:font-normal"
 		/>
 		<p class="text-balance lg:w-11/12">
 			{$_('past.hero1.intro')}

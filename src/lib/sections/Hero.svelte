@@ -13,7 +13,7 @@
 
 <div
 	class="flex h-[100svh] flex-col text-white"
-	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center; background-attachment: fixed;"
+	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center;"
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
 		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
