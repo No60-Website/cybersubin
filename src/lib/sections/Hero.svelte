@@ -12,7 +12,7 @@
 </script>
 
 <div
-	class="flex h-[100svh] flex-col text-white"
+	class="hero-bg flex h-[100svh] flex-col text-white"
 	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center;"
 >
 	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
@@ -59,3 +59,11 @@
 		</div>
 	</div>
 </div>
+
+<style>
+	@media (min-width: 768px) {
+		.hero-bg {
+			background-attachment: fixed;
+		}
+	}
+</style>
