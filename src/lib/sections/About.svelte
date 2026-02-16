@@ -6,7 +6,7 @@
 	class="grid items-center bg-gradient-to-b from-[#0000005b] to-[#5252525b] pb-12 pt-16 text-white md:ml-10 md:min-h-[100svh] md:grid-cols-3 md:items-start"
 >
 	{#if $locale === 'th'}
-		<div class="flex flex-col items-center md:w-11/12 md:items-start xl:pl-12">
+		<div class="flex flex-col items-center md:w-11/12 md:items-start md:pl-12">
 			<div class="mb-6 flex flex-col items-center md:items-start">
 				<img
 					src="/AW_LOGO_PKDC-05 1.png"
