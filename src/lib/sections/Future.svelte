@@ -61,72 +61,76 @@
 </div>
 
 <!-- Try it -->
-<div
-	bind:this={sectionRef}
-	class="relative flex min-h-[100svh] w-full flex-col gap-8 bg-black px-6 py-12 text-white md:px-10 md:py-16"
->
-	<!-- Top Header with Left and Right Text -->
-	<div class="flex items-center justify-between">
-		<h2
-			class={`font-bold text-[#E63946] md:w-min md:pl-8 md:text-6xl`}
-			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
-		>
-			{$_('try')}
-		</h2>
-		<h2 class={`text-[36px] text-[#E63946] md:w-min md:text-3xl`}>No.60</h2>
-	</div>
+{#if false}
+	<div
+		bind:this={sectionRef}
+		class="relative flex min-h-[100svh] w-full flex-col gap-8 bg-black px-6 py-12 text-white md:px-10 md:py-16"
+	>
+		<!-- Top Header with Left and Right Text -->
+		<div class="flex items-center justify-between">
+			<h2
+				class={`font-bold text-[#E63946] md:w-min md:pl-8 md:text-6xl`}
+				style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; font-size: 60px;"
+			>
+				{$_('try')}
+			</h2>
+			<h2 class={`text-[36px] text-[#E63946] md:w-min md:text-3xl`}>No.60</h2>
+		</div>
 
-	<!-- Center Content -->
-	<div class="flex flex-col items-center gap-6 text-center">
-		<p
-			class="text-[22px]"
-			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; "
-		>
-			<HighlightText text={$_('future.hub.title')} highlightColor="#E63946" />
-		</p>
+		<!-- Center Content -->
+		<div class="flex flex-col items-center gap-6 text-center">
+			<p
+				class="text-[22px]"
+				style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; "
+			>
+				<HighlightText text={$_('future.hub.title')} highlightColor="#E63946" />
+			</p>
+			<div
+				class="flex flex-col gap-4 md:flex-row"
+				style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
+			>
+				<a
+					href="https://learn.pkdance.co/"
+					class="rounded-[20px] border border-[#E63946] px-6 py-2 text-[17px] text-[#E63946] hover:border-[#7B0F12] hover:bg-[#7B0F12] hover:text-black"
+				>
+					{$_('future.hub.button_signup')}
+				</a>
+				<a
+					href="https://learn.pkdance.co/login"
+					class="rounded-[20px] border border-white px-6 py-2 text-[17px] text-white hover:bg-white hover:text-black"
+				>
+					{$_('future.hub.button_login')}
+				</a>
+			</div>
+		</div>
+		<!-- Image -->
 		<div
-			class="flex flex-col gap-4 md:flex-row"
-			style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;"
+			class="pointer-events-none absolute left-0 top-0 z-0 h-[100svh] w-screen overflow-x-hidden"
 		>
-			<a
-				href="https://learn.pkdance.co/"
-				class="rounded-[20px] border border-[#E63946] px-6 py-2 text-[17px] text-[#E63946] hover:border-[#7B0F12] hover:bg-[#7B0F12] hover:text-black"
-			>
-				{$_('future.hub.button_signup')}
-			</a>
-			<a
-				href="https://learn.pkdance.co/login"
-				class="rounded-[20px] border border-white px-6 py-2 text-[17px] text-white hover:bg-white hover:text-black"
-			>
-				{$_('future.hub.button_login')}
-			</a>
+			<img
+				src="/hero/left-1.png"
+				style={`transform: translate3d(0px, ${parallax * 0.08}px, 0px); will-change: transform;`}
+				class="absolute -left-[1%] top-[60%] h-72 lg:left-[28%] lg:top-[40%] xl:left-[32%]"
+				alt=""
+			/>
+			<img
+				src="/hero/right-1.png"
+				style={`transform: translate3d(0px, -${parallax * 0.08}px, 0px); will-change: transform;`}
+				class="absolute -right-[11%] top-[70%] h-72 lg:right-[25%] lg:top-[40%] xl:right-[28%]"
+				alt=""
+			/>
+			<img
+				src="/hero/left-2.png"
+				style={`transform: translate3d(0px, -${parallax * 0.1}px, 0px); will-change: transform;`}
+				class="absolute left-[4%] top-[40%] hidden h-72 lg:block xl:left-[8%]"
+				alt=""
+			/>
+			<img
+				src="/hero/right-2.png"
+				style={`transform: translate3d(0px, ${parallax * 0.1}px, 0px); will-change: transform;`}
+				class="absolute right-[2%] top-[40%] hidden h-72 lg:block xl:right-[8%]"
+				alt=""
+			/>
 		</div>
 	</div>
-	<!-- Image -->
-	<div class="pointer-events-none absolute left-0 top-0 z-0 h-[100svh] w-screen overflow-x-hidden">
-		<img
-			src="/hero/left-1.png"
-			style={`transform: translate3d(0px, ${parallax * 0.08}px, 0px); will-change: transform;`}
-			class="absolute -left-[1%] top-[60%] h-72 lg:left-[28%] lg:top-[40%] xl:left-[32%]"
-			alt=""
-		/>
-		<img
-			src="/hero/right-1.png"
-			style={`transform: translate3d(0px, -${parallax * 0.08}px, 0px); will-change: transform;`}
-			class="absolute -right-[11%] top-[70%] h-72 lg:right-[25%] lg:top-[40%] xl:right-[28%]"
-			alt=""
-		/>
-		<img
-			src="/hero/left-2.png"
-			style={`transform: translate3d(0px, -${parallax * 0.1}px, 0px); will-change: transform;`}
-			class="absolute left-[4%] top-[40%] hidden h-72 lg:block xl:left-[8%]"
-			alt=""
-		/>
-		<img
-			src="/hero/right-2.png"
-			style={`transform: translate3d(0px, ${parallax * 0.1}px, 0px); will-change: transform;`}
-			class="absolute right-[2%] top-[40%] hidden h-72 lg:block xl:right-[8%]"
-			alt=""
-		/>
-	</div>
-</div>
+{/if}
