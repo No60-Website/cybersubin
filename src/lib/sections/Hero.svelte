@@ -6,9 +6,9 @@
 	let isIOS = false;
 
 	onMount(() => {
-		// Detect iOS devices (iPhone, iPad, iPod)
-		// @ts-ignore
-		isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+		// Detect touch devices (iOS, Android tablets, etc.)
+		// Modern iPads report as "Macintosh" in desktop mode, so we check for touch capability
+		isIOS = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
 		document.addEventListener('scroll', () => {
 			parallax = window.scrollY;
