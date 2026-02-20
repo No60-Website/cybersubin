@@ -6,6 +6,9 @@
 
 	let img = false;
 	let opacity = 0;
+	let playing = false;
+
+	$: if ($current) playing = false;
 </script>
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
@@ -51,9 +54,48 @@
 				class="relative aspect-[3/4] max-h-full w-full overflow-hidden rounded-md border border-neutral-700 bg-black hover:cursor-grab"
 			>
 				{#key $current}
-					<Figure i={+$current} seek={$slider} />
+					<Figure i={+$current} seek={$slider} {playing} />
+					{#if !playing}
+						<button
+							class="absolute left-1/2 top-1/2 z-50 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition hover:bg-white/30"
+							on:click={() => (playing = true)}
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-8 w-8"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+							>
+								<path d="M8 5v14l11-7z" />
+							</svg>
+						</button>
+					{/if}
+					<button
+						class="hover:text-red-500 absolute bottom-[10px] left-4 z-50 flex items-center justify-center text-white transition"
+						on:click={() => (playing = !playing)}
+					>
+						{#if playing}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-7 w-7"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+							>
+								<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+							</svg>
+						{:else}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="h-7 w-7"
+								viewBox="0 0 24 24"
+								fill="currentColor"
+							>
+								<path d="M8 5v14l11-7z" />
+							</svg>
+						{/if}
+					</button>
 					{#if !img}
-						<div class="absolute bottom-0 left-0 z-50 mb-2 h-8 w-full px-4">
+						<div class="absolute bottom-0 left-9 right-0 z-50 mb-2 h-8 px-4">
 							<input
 								type="range"
 								name=""

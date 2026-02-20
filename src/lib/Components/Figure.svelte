@@ -10,6 +10,7 @@
 
 	export let i = 1;
 	export let seek = undefined;
+	export let playing = false;
 
 	let clock, mixer, controls, canvas, camera, clip;
 	let loadModel = (i) => {};
@@ -64,12 +65,13 @@
 		function animate() {
 			if (stop) return;
 			requestAnimationFrame(animate);
-			if (mixer) {
+			if (mixer && playing) {
 				const time = clip?.[0].duration;
 				const speed = 4;
 				$slider = ($slider + (clock.getDelta() / (time / speed)) * 100) % 100;
-				// console.log($slider);
 				mixer.update(clock.getDelta() * speed);
+			} else if (mixer) {
+				clock.getDelta();
 			}
 
 			scene.children.forEach((child) => {
