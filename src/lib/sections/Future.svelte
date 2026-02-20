@@ -52,9 +52,17 @@
 				</p>
 			</div>
 
-			<!-- Right Column - Video/Image -->
-			<div class="relative flex items-center justify-center">
-				<img src="/video-player.png" alt="Video Player" class="h-auto w-[720px]" />
+			<!-- Right Column - Subscribe -->
+			<div class="flex flex-col items-center justify-center gap-4">
+				<h3 class="text-[32px] font-bold text-white">{$_('future.subscribe.title')}</h3>
+				<a
+					href="https://pkdance.co/?ff_landing=11"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="rounded-[30px] bg-[#7B0F12] px-20 py-3 text-white transition hover:bg-[#9B1F22]"
+				>
+					{$_('future.subscribe.button')}
+				</a>
 			</div>
 		</div>
 	</div>
