@@ -26,7 +26,12 @@
 			<a href="#past" class="hover:cursor-pointer hover:bg-[#C5A46D]">{$_('menu.past')}</a>
 			<a href="#present" class="hover:cursor-pointer hover:bg-[#CA6C37]">{$_('menu.present')}</a>
 			<a href="#future" class="hover:cursor-pointer hover:bg-[#7B0F12]">{$_('menu.future')}</a>
-			<a href="#about" class="hover:cursor-pointer hover:bg-[#262626]">{$_('menu.about')}</a>
+			<a
+				href="https://learn.pkdance.co/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="hover:cursor-pointer hover:bg-[#262626]">{$_('menu.login')}</a
+			>
 		</div>
 	</nav>
 	<div

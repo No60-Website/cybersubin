@@ -5,7 +5,6 @@
 	import Present from '$lib/sections/Present.svelte';
 	import Present2 from '$lib/sections/Present2.svelte';
 	import Future from '$lib/sections/Future.svelte';
-	import About from '$lib/sections/About.svelte';
 	import Dialog from '$lib/Components/Dialog.svelte';
 	import ElementDialog from '$lib/Components/ElementDialog.svelte';
 
@@ -25,7 +24,7 @@
 			});
 		});
 
-		['#past', '#present', '#future', '#about'].forEach((id) => {
+		['#past', '#present', '#future'].forEach((id) => {
 			const element = document.querySelector(id);
 			if (element) observer.observe(element);
 		});
@@ -55,9 +54,10 @@
 	>
 		<div class="divide-x-white grid w-full grid-cols-4 divide-x">
 			<a
-				href="#about"
-				class={`w-full p-2 text-center hover:bg-black ${current === 'about' ? 'bg-black' : ''}`}
-				>{$_('menu.about')}</a
+				href="https://learn.pkdance.co/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="w-full p-2 text-center hover:bg-black">{$_('menu.login')}</a
 			>
 			<a
 				href="#future"
@@ -91,16 +91,14 @@
 		<Future />
 	</div>
 
-	<div id="about">
-		<About />
-	</div>
-
 	<nav
 		class="sticky bottom-0 z-50 w-full border-t border-y-white bg-black text-center font-bold text-white md:hidden"
 	>
 		<ul class="divide-x-white grid w-full grid-cols-4 divide-x [&>li]:p-2">
-			<li class={`hover:cursor-pointer  ${current === 'past' ? 'bg-[#C5A46D]' : ''}`}>
-				<a href="#past">{$_('menu.past')}</a>
+			<li class="hover:cursor-pointer">
+				<a href="https://learn.pkdance.co/" target="_blank" rel="noopener noreferrer"
+					>{$_('menu.login')}</a
+				>
 			</li>
 			<li class={`hover:cursor-pointer ${current === 'present' ? 'bg-[#CA6C37]' : ''}`}>
 				<a href="#present">{$_('menu.present')}</a>
@@ -108,8 +106,8 @@
 			<li class={`hover:cursor-pointer ${current === 'future' ? 'bg-[#7B0F12]' : ''}`}>
 				<a href="#future">{$_('menu.future')}</a>
 			</li>
-			<li class={`hover:cursor-pointer ${current === 'about' ? 'bg-[#262626]' : ''}`}>
-				<a href="#about">{$_('menu.about')}</a>
+			<li class={`hover:cursor-pointer ${current === 'past' ? 'bg-[#C5A46D]' : ''}`}>
+				<a href="#past">{$_('menu.past')}</a>
 			</li>
 		</ul>
 	</nav>
