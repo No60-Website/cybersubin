@@ -27,7 +27,9 @@
 	});
 </script>
 
-<div class="relative flex min-h-[80svh] flex-col p-6 lg:min-h-[100svh] lg:justify-center lg:px-10">
+<div
+	class="relative flex min-h-[80svh] flex-col overflow-hidden p-6 lg:min-h-[100svh] lg:justify-center lg:px-10"
+>
 	<div class="flex flex-col gap-8 bg-black text-white md:px-10 md:py-16">
 		<!-- Header Section -->
 		<Title_wild
@@ -40,7 +42,7 @@
 		<!-- Two Column Layout -->
 		<div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
 			<!-- Left Column - Text -->
-			<div class="space-y-6">
+			<div class="h-full space-y-6 pt-[20px]">
 				<p class="leading-relaxed">
 					<HighlightText text={$_('future.hero1.p2')} highlightColor="#C5A46D" />
 				</p>
@@ -53,8 +55,25 @@
 			</div>
 
 			<!-- Right Column - Subscribe -->
-			<div class="flex flex-col items-center justify-center gap-4">
-				<h3 class="text-[32px] font-bold text-white">{$_('future.subscribe.title')}</h3>
+			<div
+				bind:this={sectionRef}
+				class="relative flex h-full min-h-[400px] flex-col items-center gap-4"
+			>
+				<img
+					src="/hero/left-1.png"
+					style={`transform: translate3d(0px, ${parallax * 0.05}px, 0px); will-change: transform;`}
+					class="absolute -left-[5%] top-[23%] h-72 lg:left-[28%] lg:top-[10%] xl:left-[10%]"
+					alt=""
+				/>
+				<img
+					src="/hero/right-1.png"
+					style={`transform: translate3d(0px, -${parallax * 0.05}px, 0px); will-change: transform;`}
+					class="absolute -right-[20%] top-[33%] h-72 lg:right-[25%] lg:top-[20%] xl:right-[10%]"
+					alt=""
+				/>
+				<h3 class="text-center text-[28px] text-white md:text-[32px]">
+					{$_('future.subscribe.title')}
+				</h3>
 				<a
 					href="https://pkdance.co/?ff_landing=11"
 					target="_blank"
