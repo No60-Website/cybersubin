@@ -21,7 +21,9 @@
 	class:ios-device={isIOS}
 	style="font-family: 'Archivo', 'noto sans thai', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; background-image: url('/hero/hero_bg.png'); background-size: cover; background-position: center;"
 >
-	<nav class="z-20 w-full border-b border-y-white bg-black text-center font-bold">
+	<nav
+		class="z-20 w-full border-b border-y-white bg-black text-center text-[10px] font-bold md:sm:text-[16px]"
+	>
 		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
 			<a href="#past" class="hover:cursor-pointer hover:bg-[#C5A46D]">{$_('menu.past')}</a>
 			<a href="#present" class="hover:cursor-pointer hover:bg-[#CA6C37]">{$_('menu.present')}</a>
