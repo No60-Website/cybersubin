@@ -53,12 +53,14 @@
 		style="transform-origin: top left;"
 	>
 		<div class="divide-x-white grid w-full grid-cols-4 divide-x">
+{#if false}
 			<a
 				href="https://learn.pkdance.co/"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="w-full p-2 text-center hover:bg-black">{$_('menu.login')}</a
 			>
+{/if}
 			<a
 				href="#future"
 				class={`w-full p-2 text-center hover:bg-red ${current === 'future' ? 'bg-red' : ''}`}
@@ -104,11 +106,13 @@
 			<li class={`hover:cursor-pointer ${current === 'future' ? 'bg-[#7B0F12]' : ''}`}>
 				<a href="#future">{$_('menu.future')}</a>
 			</li>
+{#if false}
 			<li class="hover:cursor-pointer">
 				<a href="https://learn.pkdance.co/" target="_blank" rel="noopener noreferrer"
 					>{$_('menu.login')}</a
 				>
 			</li>
+{/if}
 		</ul>
 	</nav>
 </div>
