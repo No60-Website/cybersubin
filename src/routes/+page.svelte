@@ -52,7 +52,7 @@
 		class="sticky left-0 top-[100%] z-50 -mb-10 mt-[100dvh] hidden w-[100dvh] -rotate-90 border-b border-b-white bg-neutral-800 font-bold text-white md:block"
 		style="transform-origin: top left;"
 	>
-		<div class="divide-x-white grid w-full grid-cols-4 divide-x">
+		<div class="divide-x-white grid w-full grid-cols-3 divide-x">
 {#if false}
 			<a
 				href="https://learn.pkdance.co/"
@@ -96,7 +96,7 @@
 	<nav
 		class="sticky bottom-0 z-50 w-full border-t border-y-white bg-black text-center text-[10px] font-bold text-white md:hidden"
 	>
-		<ul class="divide-x-white grid w-full grid-cols-4 divide-x [&>li]:p-2">
+		<ul class="divide-x-white grid w-full grid-cols-3 divide-x [&>li]:p-2">
 			<li class={`hover:cursor-pointer ${current === 'past' ? 'bg-[#C5A46D]' : ''}`}>
 				<a href="#past">{$_('menu.past')}</a>
 			</li>
