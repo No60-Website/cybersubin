@@ -7,9 +7,40 @@
 	let img = false;
 	let opacity = 0;
 	let playing = false;
+	let pressedKey = null;
 
 	$: if ($current) playing = false;
+
+	function navigate(direction) {
+		if (direction === 'next') {
+			$current = $current === 59 ? 1 : $current + 1;
+		} else {
+			$current = $current === 1 ? 59 : $current - 1;
+		}
+	}
+
+	function handleKeydown(e) {
+		if (pressedKey === e.key) return; // Already handling this key
+
+		if (e.key === 'ArrowRight') {
+			e.preventDefault();
+			pressedKey = e.key;
+			navigate('next');
+		} else if (e.key === 'ArrowLeft') {
+			e.preventDefault();
+			pressedKey = e.key;
+			navigate('prev');
+		}
+	}
+
+	function handleKeyup(e) {
+		if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+			pressedKey = null;
+		}
+	}
 </script>
+
+<svelte:window on:keydown={handleKeydown} on:keyup={handleKeyup} />
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -19,15 +50,51 @@
 	<div
 		class="glass relative grid max-h-full w-full min-w-[50%] max-w-4xl gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-4 text-white shadow-md lg:h-auto lg:flex-row"
 	>
-		<h3 class="w-full text-wrap pr-10 text-xl">
+		<!-- Left Arrow Button -->
+		<button
+			class="absolute left-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-white opacity-60 transition hover:opacity-100 focus:outline-none"
+			on:click={() => navigate('prev')}
+			aria-label="Previous movement"
+			tabindex="-1"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="h-6 w-6"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+			>
+				<polyline points="15 18 9 12 15 6"></polyline>
+			</svg>
+		</button>
+
+		<!-- Right Arrow Button -->
+		<button
+			class="absolute right-4 top-1/2 z-50 flex h-10 w-10 -translate-y-1/2 items-center justify-center text-white opacity-60 transition hover:opacity-100 focus:outline-none"
+			on:click={() => navigate('next')}
+			aria-label="Next movement"
+			tabindex="-1"
+		>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="h-6 w-6"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+			>
+				<polyline points="9 18 15 12 9 6"></polyline>
+			</svg>
+		</button>
+
+		<h3 class="w-full text-wrap pr-10 text-xl text-center">
 			{#if $locale === 'th'}
-				<span class="font-bold text-gold">แม่บทที่ {$current}</span>
-				·
+				<span class="font-bold text-gold">แม่บทที่ {$current}</span><br />
 				{posture[$current - 1].thai}
 				({posture[$current - 1].english})
 			{:else}
-				<span class="font-bold text-gold">Pose {$current}</span>
-				·
+				<span class="font-bold text-gold">Pose {$current}</span><br />
 				{posture[$current - 1].english}
 				({posture[$current - 1].thai})
 			{/if}

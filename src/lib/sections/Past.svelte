@@ -4,7 +4,6 @@
 	import Title from '$lib/Components/Title.svelte';
 	import Title_wild from '$lib/Components/Title_wild.svelte';
 	import PastPopup from '$lib/Components/PastPopup.svelte';
-	import Dialog from '$lib/Components/Dialog.svelte';
 	import { mvtSet, openPastDialog, openDialog, current } from '$lib/store';
 	import { _ } from 'svelte-i18n';
 
@@ -129,9 +128,6 @@
 	<PastPopup />
 {/if}
 
-{#if $openDialog}
-	<Dialog />
-{/if}
 
 <!-- <div
 	class="grid grid-cols-1 bg-gradient-to-b from-neutral-800 to-black pb-12 pt-16 md:ml-10 md:grid-cols-3 lg:min-h-[100svh]"
