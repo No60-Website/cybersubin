@@ -17,7 +17,9 @@
 	$: arr =
 		$set === 0
 			? [...Array(59)].map((n, i) => i)
-			: [...Array(20)].map((n, i) => ($set - 1) * 20 + i);
+			: $set >= 100
+				? [$set - 101]
+				: [...Array(20)].map((n, i) => ($set - 1) * 20 + i);
 
 	onMount(() => {
 		setTimeout(init, 0);

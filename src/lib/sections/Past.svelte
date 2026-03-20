@@ -4,8 +4,13 @@
 	import Title from '$lib/Components/Title.svelte';
 	import Title_wild from '$lib/Components/Title_wild.svelte';
 	import PastPopup from '$lib/Components/PastPopup.svelte';
-	import { mvtSet, openPastDialog } from '$lib/store';
+	import Dialog from '$lib/Components/Dialog.svelte';
+	import { mvtSet, openPastDialog, openDialog, current } from '$lib/store';
 	import { _ } from 'svelte-i18n';
+
+	$: if (!$openDialog && $mvtSet !== 0) {
+		$mvtSet = 0;
+	}
 </script>
 
 <div
@@ -70,7 +75,7 @@
 			rightDesc: $_('past.caption')
 		}}
 	>
-		<div class="grid h-min w-full grid-cols-2 justify-center gap-4 md:flex">
+		<div class="grid h-min w-full grid-cols-2 justify-center gap-4 md:flex md:flex-wrap">
 			<button
 				on:click={() => {
 					$mvtSet = 0;
@@ -87,6 +92,22 @@
 					{(i - 1) * 20 + 1}-{Math.min(i * 20, 59)}</button
 				>
 			{/each}
+			<input
+				type="number"
+				min="1"
+				max="59"
+				placeholder={$_('past.search') || 'Search...'}
+				on:change={(e) => {
+					const num = parseInt(e.target.value);
+					if (num >= 1 && num <= 59) {
+						$mvtSet = 100 + num;
+						$current = num;
+						$openDialog = true;
+					}
+					e.target.value = '';
+				}}
+				class="mvt-search"
+			/>
 		</div>
 	</Description>
 
@@ -106,6 +127,10 @@
 
 {#if $openPastDialog}
 	<PastPopup />
+{/if}
+
+{#if $openDialog}
+	<Dialog />
 {/if}
 
 <!-- <div
@@ -147,5 +172,19 @@
 <style>
 	.mvt-btn {
 		@apply rounded-full border border-white px-4 py-1 text-center hover:cursor-pointer  hover:bg-gold hover:font-bold hover:text-white;
+	}
+
+	.mvt-search {
+		@apply rounded-full border border-white px-4 py-1 bg-black text-white placeholder-gray-400 hover:cursor-pointer hover:bg-gold hover:text-black hover:placeholder-black focus:outline-none focus:bg-gold focus:text-black;
+	}
+
+	.mvt-search::-webkit-outer-spin-button,
+	.mvt-search::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	.mvt-search[type='number'] {
+		-moz-appearance: textfield;
 	}
 </style>
