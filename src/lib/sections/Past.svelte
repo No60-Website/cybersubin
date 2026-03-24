@@ -7,7 +7,7 @@
 	import { mvtSet, openPastDialog, openDialog, current } from '$lib/store';
 	import { _ } from 'svelte-i18n';
 
-	$: if (!$openDialog && $mvtSet !== 0) {
+	$: if (!$openDialog && $mvtSet >= 100) {
 		$mvtSet = 0;
 	}
 </script>
