@@ -26,7 +26,7 @@
 				${state === 'detail' ? 'overflow-scroll' : 'overflow-hidden'}`}
 			>
 				{#key $element}
-					<Figure i={elements[$element].pose} seek={$slider} />
+					<Figure i={elements[$element].pose} seek={$slider} playing={true} />
 					<div class="absolute bottom-0 left-0 z-50 mb-2 hidden h-8 w-full px-4 lg:flex">
 						<input
 							type="range"
