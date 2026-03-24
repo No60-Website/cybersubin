@@ -4,12 +4,12 @@
 	import { posture } from '$lib/59';
 	import { locale } from 'svelte-i18n';
 
-	let img = false;
+	let img = true;
 	let opacity = 0;
 	let playing = false;
 	let pressedKey = null;
 
-	$: if ($current) playing = false;
+	$: if ($current) { playing = false; img = true; }
 
 	function navigate(direction) {
 		if (direction === 'next') {
@@ -45,7 +45,7 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <div
-	class="fixed left-0 top-0 z-[120] flex h-[100dvh] w-screen items-center justify-center bg-black/80 p-4"
+	class="fixed left-0 top-0 z-[120] flex h-[100dvh] w-screen items-center justify-center bg-black/80 md:p-4"
 >
 	<div
 		class="glass relative grid max-h-full w-full min-w-[50%] max-w-4xl gap-4 rounded-md border border-neutral-800 bg-neutral-900 p-4 text-white shadow-md lg:h-auto lg:flex-row"
@@ -124,7 +124,7 @@
 					<Figure i={+$current} seek={$slider} {playing} />
 					{#if !playing}
 						<button
-							class="absolute left-1/2 top-1/2 z-50 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition hover:bg-white/30"
+							class="absolute left-1/2 top-1/2 z-50 h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition hover:bg-white/30 {img ? 'hidden md:flex' : 'flex'}"
 							on:click={() => (playing = true)}
 						>
 							<svg
@@ -138,7 +138,7 @@
 						</button>
 					{/if}
 					<button
-						class="hover:text-red-500 absolute bottom-[10px] left-4 z-50 flex items-center justify-center text-white transition"
+						class="hover:text-red-500 absolute bottom-[10px] left-4 z-50 items-center justify-center text-white transition {img ? 'hidden md:flex' : 'flex'}"
 						on:click={() => (playing = !playing)}
 					>
 						{#if playing}
@@ -161,17 +161,15 @@
 							</svg>
 						{/if}
 					</button>
-					{#if !img}
-						<div class="absolute bottom-0 left-9 right-0 z-50 mb-2 h-8 px-4">
-							<input
-								type="range"
-								name=""
-								bind:value={$slider}
-								class="mb-6 h-1 w-full cursor-pointer appearance-none rounded-lg bg-neutral-500 accent-neutral-200"
-								id=""
-							/>
-						</div>
-					{/if}
+					<div class="absolute bottom-0 left-9 right-0 z-50 mb-2 h-8 px-4 {img ? 'hidden md:block' : ''}">
+						<input
+							type="range"
+							name=""
+							bind:value={$slider}
+							class="mb-6 h-1 w-full cursor-pointer appearance-none rounded-lg bg-neutral-500 accent-neutral-200"
+							id=""
+						/>
+					</div>
 				{/key}
 				{#if img}
 					<div class="absolute right-0 top-0 aspect-[3/4] h-full w-full md:hidden">

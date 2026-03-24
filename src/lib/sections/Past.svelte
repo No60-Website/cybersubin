@@ -105,7 +105,7 @@
 					}
 					e.target.value = '';
 				}}
-				class="mvt-search"
+				class="mvt-search col-span-2 md:col-span-1 md:w-40"
 			/>
 		</div>
 	</Description>
@@ -127,7 +127,6 @@
 {#if $openPastDialog}
 	<PastPopup />
 {/if}
-
 
 <!-- <div
 	class="grid grid-cols-1 bg-gradient-to-b from-neutral-800 to-black pb-12 pt-16 md:ml-10 md:grid-cols-3 lg:min-h-[100svh]"
@@ -171,7 +170,7 @@
 	}
 
 	.mvt-search {
-		@apply rounded-full border border-white px-4 py-1 bg-black text-white placeholder-gray-400 hover:cursor-pointer hover:bg-gold hover:text-black hover:placeholder-black focus:outline-none focus:bg-gold focus:text-black;
+		@apply rounded-full border border-white bg-black px-4 py-1 text-white placeholder-white hover:cursor-pointer hover:bg-gold hover:font-bold hover:text-white hover:placeholder-white focus:bg-gold focus:text-black focus:outline-none;
 	}
 
 	.mvt-search::-webkit-outer-spin-button,
