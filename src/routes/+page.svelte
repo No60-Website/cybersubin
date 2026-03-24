@@ -5,7 +5,7 @@
 	import Present from '$lib/sections/Present.svelte';
 	import Present2 from '$lib/sections/Present2.svelte';
 	import Future from '$lib/sections/Future.svelte';
-	import Dialog from '$lib/Components/Dialog.svelte';
+	import PostureDialog from '$lib/Components/PostureDialog.svelte';
 	import ElementDialog from '$lib/Components/ElementDialog.svelte';
 
 	import { onMount } from 'svelte';
@@ -33,7 +33,7 @@
 
 {#if $openDialog}
 	<div class="fixed left-0 top-0 z-[100] h-[100dvh] w-screen">
-		<Dialog />
+		<PostureDialog />
 	</div>
 {/if}
 

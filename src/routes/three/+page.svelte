@@ -1,5 +1,5 @@
 <script>
-	import Dialog from '$lib/Components/Dialog.svelte';
+	import PostureDialog from '$lib/Components/PostureDialog.svelte';
 	import Figure from '$lib/Components/Figure.svelte';
 	import { slider } from '$lib/store';
 	let i = 0;
