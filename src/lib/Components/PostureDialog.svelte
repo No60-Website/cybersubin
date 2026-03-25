@@ -9,7 +9,7 @@
 	let playing = false;
 	let pressedKey = null;
 
-	$: if ($current) { playing = false; img = true; }
+	$: if ($current) { playing = false; img = true; opacity = 0; }
 
 	function navigate(direction) {
 		if (direction === 'next') {
