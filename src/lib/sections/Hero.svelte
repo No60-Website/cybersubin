@@ -24,18 +24,16 @@
 	<nav
 		class="z-20 w-full border-b border-y-white bg-black text-center text-[10px] font-bold md:sm:text-[16px]"
 	>
-		<div class="divide-x-white z-50 grid w-full grid-cols-3 divide-x [&>a]:p-2">
+		<div class="divide-x-white z-50 grid w-full grid-cols-4 divide-x [&>a]:p-2">
 			<a href="#past" class="hover:cursor-pointer hover:bg-[#C5A46D]">{$_('menu.past')}</a>
 			<a href="#present" class="hover:cursor-pointer hover:bg-[#CA6C37]">{$_('menu.present')}</a>
 			<a href="#future" class="hover:cursor-pointer hover:bg-[#7B0F12]">{$_('menu.future')}</a>
-			{#if false}
 			<a
 				href="https://learn.pkdance.co/"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="hover:cursor-pointer hover:bg-[#262626]">{$_('menu.login')}</a
 			>
-			{/if}
 		</div>
 	</nav>
 	<div
