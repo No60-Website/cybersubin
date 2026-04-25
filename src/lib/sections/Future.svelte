@@ -62,20 +62,21 @@
 				<img
 					src="/hero/left-1.png"
 					style={`transform: translate3d(0px, ${parallax * 0.05}px, 0px); will-change: transform;`}
-					class="absolute -left-[5%] top-[23%] h-72 lg:left-[28%] lg:top-[10%] xl:left-[10%]"
+					class="absolute -left-[1%] top-[40%] h-60 md:h-72 lg:left-[28%] lg:top-[10%] xl:left-[10%]"
 					alt=""
 				/>
 				<img
 					src="/hero/right-1.png"
 					style={`transform: translate3d(0px, -${parallax * 0.05}px, 0px); will-change: transform;`}
-					class="absolute -right-[20%] top-[33%] h-72 lg:right-[25%] lg:top-[20%] xl:right-[10%]"
+					class="absolute -right-[5%] top-[45%] h-60 md:h-72 lg:right-[25%] lg:top-[20%] xl:right-[10%]"
 					alt=""
 				/>
-				<h3 class="text-center text-[28px] text-white md:text-[32px]">
-					{$_('future.subscribe.title')}
+				<h3 class="text-center text-[22px] text-white md:text-[22px] lg:text-[22px]">
+					{$_('future.subscribe.title1')} <br />
+					{$_('future.subscribe.title2')}
 				</h3>
 				<a
-					href="https://pkdance.co/?ff_landing=11"
+					href="https://learn.pkdance.co/"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="rounded-[30px] bg-[#7B0F12] px-20 py-3 text-white transition hover:bg-[#9B1F22]"
