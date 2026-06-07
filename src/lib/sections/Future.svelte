@@ -28,7 +28,7 @@
 </script>
 
 <div
-	class="relative flex min-h-[80svh] flex-col overflow-hidden p-6 lg:min-h-[100svh] lg:justify-center lg:px-10"
+	class="relative flex min-h-[80svh] flex-col overflow-hidden p-6 pb-60 lg:min-h-[100svh] lg:justify-center lg:px-10 lg:pb-6"
 >
 	<div class="flex flex-col gap-8 bg-black text-white md:px-10 md:py-16">
 		<!-- Header Section -->
@@ -54,36 +54,53 @@
 				</p>
 			</div>
 
-			<!-- Right Column - Subscribe -->
-			<div
-				bind:this={sectionRef}
-				class="relative flex h-full min-h-[400px] flex-col items-center gap-4"
-			>
-				<img
-					src="/hero/left-1.png"
-					style={`transform: translate3d(0px, ${parallax * 0.05}px, 0px); will-change: transform;`}
-					class="absolute -left-[1%] top-[40%] h-60 md:h-72 lg:left-[28%] lg:top-[10%] xl:left-[10%]"
-					alt=""
-				/>
-				<img
-					src="/hero/right-1.png"
-					style={`transform: translate3d(0px, -${parallax * 0.05}px, 0px); will-change: transform;`}
-					class="absolute -right-[5%] top-[45%] h-60 md:h-72 lg:right-[25%] lg:top-[20%] xl:right-[10%]"
-					alt=""
-				/>
-				<h3 class="text-center text-[22px] text-white md:text-[22px] lg:text-[22px]">
-					{$_('future.subscribe.title1')} <br />
-					{$_('future.subscribe.title2')}
-				</h3>
-				<a
-					href="https://learn.pkdance.co/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="rounded-[30px] bg-[#7B0F12] px-20 py-3 text-white transition hover:bg-[#9B1F22]"
-				>
-					{$_('future.subscribe.button')}
-				</a>
+			<!-- Right Column - Video -->
+			<div class="flex h-full items-center justify-center">
+				<div class="w-full">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/krev6CPaf9c?si=YVh9Ul7hzJSkBKQh"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+						class="h-[315px] w-full rounded-lg"
+					></iframe>
+				</div>
 			</div>
+		</div>
+
+		<!-- Subscribe Section -->
+		<div
+			bind:this={sectionRef}
+			class="relative flex min-h-[300px] flex-col items-center gap-4 pt-24"
+		>
+			<img
+				src="/hero/left-1.png"
+				style={`transform: translate3d(0px, ${parallax * 0.05}px, 0px); will-change: transform;`}
+				class="absolute -left-[1%] top-[80%] h-60 md:h-72 lg:left-[28%] lg:top-[30%] xl:left-[20%]"
+				alt=""
+			/>
+			<img
+				src="/hero/right-1.png"
+				style={`transform: translate3d(0px, -${parallax * 0.08}px, 0px); will-change: transform;`}
+				class="absolute -right-[8%] top-[95%] h-60 md:h-72 lg:right-[25%] lg:top-[30%] xl:right-[15%]"
+				alt=""
+			/>
+			<h3 class="text-center text-[22px] text-white md:text-[22px] lg:text-[22px]">
+				{$_('future.subscribe.title1')} <br />
+				{$_('future.subscribe.title2')}
+			</h3>
+			<a
+				href="https://learn.pkdance.co/"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="rounded-[30px] bg-[#7B0F12] px-20 py-3 text-white transition hover:bg-[#9B1F22]"
+			>
+				{$_('future.subscribe.button')}
+			</a>
 		</div>
 	</div>
 </div>
