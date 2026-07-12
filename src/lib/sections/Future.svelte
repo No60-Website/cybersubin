@@ -252,6 +252,11 @@
 			</ul>
 
 			<ul class="text-center md:text-left">
+				<li><span class="font-bold">3D Animator:</span></li>
+				<li>ปิยพร พงษ์ทอง</li>
+			</ul>
+
+			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Website & LMS:</span></li>
 				<li>ปภัสสิริย์ อภิไพบูลย์</li>
 				<li>รินรดา เทพแก้ว</li>
@@ -331,6 +336,11 @@
 			<ul class="text-center md:text-left">
 				<li><span class="font-bold">Video Production:</span></li>
 				<li>Threethep Production</li>
+			</ul>
+
+			<ul class="text-center md:text-left">
+				<li><span class="font-bold">3D Animator:</span></li>
+				<li>Piyaporn Bhongse-tong</li>
 			</ul>
 
 			<ul class="text-center md:text-left">
